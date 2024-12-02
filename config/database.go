@@ -15,9 +15,9 @@ var DB *sql.DB
 func ConnectDatabase() {
 	// Load .env file
 	err := godotenv.Load()
-	if err != nil {
-		log.Fatal("Error loading .env file")
-	}
+	//if err != nil {
+	//	log.Fatal("Error loading .env file")
+	//}
 
 	// Ambil konfigurasi dari environment variables
 	dbUser := os.Getenv("DB_USER")
